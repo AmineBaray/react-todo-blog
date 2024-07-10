@@ -6,7 +6,7 @@ function Home() {
   const [blogs, setBlogs] = useState([
     { id:1 ,
       title:"Blog",
-      body: "lorem do...", 
+      body: "Full stack dev", 
       author:"Amine"},
 
     {id:2 , title:"Blog 2", body: "lorem do...", author:"Marwane"},
