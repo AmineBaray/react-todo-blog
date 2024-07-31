@@ -1,18 +1,9 @@
 import './index.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BlogList from './BlogList'
 function Home() {
 
-  const [blogs, setBlogs] = useState([
-    { id:1 ,
-      title:"Blog",
-      body: "Full stack dev", 
-      author:"Amine"},
-
-    {id:2 , title:"Blog 2", body: "lorem do...", author:"Marwane"},
-    {id:3 , title:"Blog 3", body: "lorem do...", author:"Amine"},
-    {id:4 , title:"Blog 4", body: "lorem do...", author:"Maryam"}
-  ]);
+  const [blogs, setBlogs] = useState(null);
 
 
   /*
@@ -24,12 +15,30 @@ function Home() {
     setBlogs(newBlogs);
   }
 
+  useEffect(()=>{
+    const authors = blogs.map(blog => blog.author);
+    console.log(authors);
+  },[blogs]);
+
+  /*
+    check if useEffect of the authors change if i change this
+  const [name, setName] = useState("amine");
+  const clikkk = () => {
+    setName("Done");
+  }*/
+  
   return (
     <>
       <div className=''>
       <BlogList blogs={blogs} title="All Blogs!" HandlDelete={HandlDelete}/>
 
-      {/* <BlogList blogs={blogs.filter((blog)=>(
+
+
+{/* 
+      <p>{name}</p>
+      <button onClick={clikkk}>doooooooone</button> 
+
+      <BlogList blogs={blogs.filter((blog)=>(
         blog.author === "Amine"
       ))} title="Amine Blogs!"/> */}
       </div>

@@ -1,0 +1,27 @@
+{
+    "blogs":[
+    { 
+    "id":1 ,
+    "title":"Blog 1",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod finibus massa ac malesuada. Vivamus lorem dolor, porta vitae cursus et, varius in orci. Duis vitae arcu et est ultrices lobortis ac a ex. Proin ac est at nisl vestibulum condimentum quis ut nibh. Pellentesque sagittis purus vulputate ipsum pellentesque dictum. Nunc dictum luctus sollicitudin. Donec in nunc tempor, rutrum tortor et, elementum tellus. Nam in lacus quis sapien vehicula auctor. Ut porta felis sed lacinia congue. Mauris tristique ante dignissim lacus posuere dapibus.", 
+    "author":"Amine"},
+
+    {
+    "id":2 ,
+    "title":"Blog 2",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod finibus massa ac malesuada. Vivamus lorem dolor, porta vitae cursus et, varius in orci. Duis vitae arcu et est ultrices lobortis ac a ex. Proin ac est at nisl vestibulum condimentum quis ut nibh. Pellentesque sagittis purus vulputate ipsum pellentesque dictum. Nunc dictum luctus sollicitudin. Donec in nunc tempor, rutrum tortor et, elementum tellus. Nam in lacus quis sapien vehicula auctor. Ut porta felis sed lacinia congue. Mauris tristique ante dignissim lacus posuere dapibus.",
+    "author":"Marwane"
+    },
+    {
+    "id":3 ,
+    "title":"Blog 3", 
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod finibus massa ac malesuada. Vivamus lorem dolor, porta vitae cursus et, varius in orci. Duis vitae arcu et est ultrices lobortis ac a ex. Proin ac est at nisl vestibulum condimentum quis ut nibh. Pellentesque sagittis purus vulputate ipsum pellentesque dictum. Nunc dictum luctus sollicitudin. Donec in nunc tempor, rutrum tortor et, elementum tellus. Nam in lacus quis sapien vehicula auctor. Ut porta felis sed lacinia congue. Mauris tristique ante dignissim lacus posuere dapibus.",
+    "author":"Amine"},
+    {
+    "id":4 , 
+    "title":"Blog 4", 
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod finibus massa ac malesuada. Vivamus lorem dolor, porta vitae cursus et, varius in orci. Duis vitae arcu et est ultrices lobortis ac a ex. Proin ac est at nisl vestibulum condimentum quis ut nibh. Pellentesque sagittis purus vulputate ipsum pellentesque dictum. Nunc dictum luctus sollicitudin. Donec in nunc tempor, rutrum tortor et, elementum tellus. Nam in lacus quis sapien vehicula auctor. Ut porta felis sed lacinia congue. Mauris tristique ante dignissim lacus posuere dapibus.",
+    "author":"Maryam"
+    }
+  ]
+}

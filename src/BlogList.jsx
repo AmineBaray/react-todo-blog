@@ -7,20 +7,22 @@ function Home({blogs, title, HandlDelete}) {
 */ 
   return (
     <>
-      <div className='container mt-4 ml-80'>
-        <h1 className='text-4xl m-6'>
+      <div className='ml-24 mt-10 mr-24'>
+        <h1 className='text-5xl font-extrabold m-6'>
             {title}
         </h1>
-      {blogs.map((blog)=>(
-        <div className='bg-white drop-shadow-sm hover:drop-shadow-md m-2 p-4 w-3/5' key={blog.id}>
-          <h2 className='text-2xl p-3 text-cyan-400'>{blog.title}</h2>
+        <div className="grid grid-cols-2 gap-2">
+        {blogs.map((blog)=>(
+        <div className='bg-gray-50 rounded-sm drop-shadow-sm hover:drop-shadow-lg p-4' key={blog.id}>
+          <h2 className='text-3xl font-bold p-3 text-sky-700'>{blog.title}</h2>
           <p className='p-2'>written by {blog.author}</p>
+          <p className='p-2'>{blog.body}</p>
           <button onClick={()=>{
             HandlDelete(blog.id)
-          }} className='bg-red-200 p-2 rounded-md'>Delete blog</button>
+          }} className='bg-red-400 p-2 rounded-md text-white font-medim'>Delete blog</button>
         </div>
         ))}
-
+      </div>
       </div>
     </>
   )
