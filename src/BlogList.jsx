@@ -1,6 +1,6 @@
 import './index.css';
 
-function Home({blogs, title, HandlDelete}) {
+function Home({blogs, title}) {
 /*
     const blogs = props.blogs;
     const title = props.title;
@@ -17,9 +17,6 @@ function Home({blogs, title, HandlDelete}) {
           <h2 className='text-3xl font-bold p-3 text-sky-700'>{blog.title}</h2>
           <p className='p-2'>written by {blog.author}</p>
           <p className='p-2'>{blog.body}</p>
-          <button onClick={()=>{
-            HandlDelete(blog.id)
-          }} className='bg-red-400 p-2 rounded-md text-white font-medim'>Delete blog</button>
         </div>
         ))}
       </div>
