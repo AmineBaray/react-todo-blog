@@ -4,7 +4,7 @@ import BlogList from './BlogList'
 function Home() {
 
   const [blogs, setBlogs] = useState(null);
-
+  const [Pending, setPending] = useState(true);
 
   /*
     make a function do new array with the id not selected!
@@ -17,13 +17,17 @@ function Home() {
 */
 // fetch the data form json-server 
 useEffect(()=>{
-  fetch("http://localhost:8000/blogs")
+  setTimeout(()=>{
+    fetch("http://localhost:8000/blogs")
     .then(res => {
       return res.json();
     })
     .then(data =>{
       setBlogs(data);
-    })
+      setPending(false);
+    });
+  },2000);
+  
 },[]);
 
 /*
@@ -41,7 +45,8 @@ useEffect(()=>{
   return (
     <>
       <div className=''>
-      {blogs && <BlogList blogs={blogs} title="All Blogs!"/>}
+        {Pending && <div className='flex items-center justify-center text-3xl mt-8'>Loading....</div>}
+        {blogs && <BlogList blogs={blogs} title="All Blogs!"/>}
 
 
 
