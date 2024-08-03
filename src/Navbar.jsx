@@ -10,7 +10,7 @@ function Navbar() {
                 
                 <div className="pl-40">
                     <a href="/" className="hover:text-sky-700 text-xl">Home</a>
-                    <a href="/create" className="pl-10 hover:text-sky-700 text-xl">New Blog</a>
+                    <a href="/NewBlog" className="pl-10 hover:text-sky-700 text-xl">New Blog</a>
                 </div>
             </div> 
         </>
