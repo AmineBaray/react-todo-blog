@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Navbar() {
     return ( 
         <>
@@ -9,8 +10,8 @@ function Navbar() {
                 </div>
                 
                 <div className="pl-40">
-                    <a href="/" className="hover:text-sky-700 text-xl">Home</a>
-                    <a href="/NewBlog" className="pl-10 hover:text-sky-700 text-xl">New Blog</a>
+                    <Link to="/" className="hover:text-sky-700 text-xl">Home</Link>
+                    <Link to="/NewBlog" className="pl-10 hover:text-sky-700 text-xl">New Blog</Link>
                 </div>
             </div> 
         </>
