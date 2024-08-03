@@ -1,6 +1,6 @@
 import './index.css';
 
-function Home({blogs, title}) {
+function Bloglist({blogs, title}) {
 /*
     const blogs = props.blogs;
     const title = props.title;
@@ -25,4 +25,4 @@ function Home({blogs, title}) {
   )
 }
 
-export default Home
+export default Bloglist
