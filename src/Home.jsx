@@ -1,5 +1,4 @@
 import './index.css';
-import { useState, useEffect } from 'react';
 import BlogList from './BlogList'
 import useFetch from './useFetch';
 function Home() {
