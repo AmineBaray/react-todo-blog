@@ -1,9 +1,11 @@
 import {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 function NewBlog () {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [body, setBody] = useState('');
     const [isPending, setIsPending] = useState(false);
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
         // preventDefault stop the page reload because the form by default reload!
         e.preventDefault();
@@ -16,6 +18,7 @@ function NewBlog () {
         }).then(()=>{
             console.log("the blog is added");
             setIsPending(false);
+            navigate('/');
         })
     }
     return ( 
