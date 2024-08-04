@@ -6,6 +6,7 @@ import NewBlog from './NewBlog'
 import BlogDetails from './BlogDetails'
 // in react-router-dom "V6" the Switch not exect is change by Routes and Route the component in side hem with par element
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import NotFound from './NotFound'
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/NewBlog' element={<NewBlog />} />
           <Route exact path='/BlogDetails/:id' element={<BlogDetails />} />
+          <Route exact path='*' element={<NotFound />} />
         </Routes>
       </div>
     </Router>
